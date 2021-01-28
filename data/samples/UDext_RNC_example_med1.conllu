@@ -1,0 +1,42 @@
+# newdoc
+# sent_id = 2906
+# text = Ровно через месяц директор нашей школы Василий Васильевич Туркин...
+1	Ровно	ровно	ADV	ADV.|A.brev.n.sg.	_	0	root	_	wf=Р`овно
+2	через	через	ADP	PR.	_	1	dep	_	wf=ч`ерез
+3	месяц	месяц	NOUN	S.inan.m.nom.sg.|S.acc.inan.m.sg.	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	dep	_	wf=м`есяц
+4	директор	директор	NOUN	S.anim.m.nom.sg.	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	dep	_	wf=дир`ектор
+5	нашей	наш	DET	APRO.f.gen.sg.|APRO.dat.f.sg.|APRO.f.ins.sg.|APRO.f.loc.sg.	Case=Gen|Gender=Fem|Number=Sing	1	dep	_	wf=н`ашей
+6	школы	школа	NOUN	S.f.gen.inan.sg.	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	dep	_	wf=шк`олы
+7	Василий	Василий	PROPN	S.anim.m.nom.persn.sg.	Animacy=Anim|Case=Nom|Gender=Masc|NounType=Persn|Number=Sing	1	dep	_	wf=Вас`илий
+8	Васильевич	Васильевич	PROPN	S.anim.m.nom.patrn.sg.	Animacy=Anim|Case=Nom|Gender=Masc|NounType=Patrn|Number=Sing	1	dep	_	wf=Вас`ильевич
+9	Туркин	Туркин	PROPN	S.anim.famn.m.nom.sg.	Animacy=Anim|Case=Nom|Gender=Masc|NounType=Famn|Number=Sing	1	dep	_	SpaceAfter=No
+10	...	...	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=\n|</p>
+
+# newpar
+# sent_id = 2907
+# text = Впрочем, об этом, пожалуй, говорить еще рано, ведь это случится через месяц, а сейчас еще прошло только десять минут
+1	Впрочем	впрочем	PARENTH	PARENTH.	_	0	root	_	SpaceAfter=No|before:<p>|wf=Впр`очем
+2	,	,	PUNCT	PUNCT.	_	1	punct	_	_
+3	об	об	ADP	PR.	_	1	dep	_	_
+4	этом	это	PRON	SPRO.loc.n.sg.	Case=Loc|Gender=Neut|Number=Sing	1	dep	_	SpaceAfter=No|wf=`этом
+5	,	,	PUNCT	PUNCT.	_	1	punct	_	_
+6	пожалуй	пожалуй	PARENTH	PARENTH.	_	1	dep	_	SpaceAfter=No|wf=пож`алуй
+7	,	,	PUNCT	PUNCT.	_	1	punct	_	_
+8	говорить	говорить	VERB	V.act.inf.ipf.tran.	Aspect=Imp|Transit=Tran|VerbForm=Inf|Voice=Act	1	dep	_	wf=говор`ить
+9	еще	еще	ADV	ADV.	_	1	dep	_	wf=ещё
+10	рано	рано	PRED	PRAEDIC.	_	1	dep	_	SpaceAfter=No|wf=р`ано
+11	,	,	PUNCT	PUNCT.	_	1	punct	_	_
+12	ведь	ведь	SCONJ	CONJ.	_	1	dep	_	_
+13	это	это	PRON	SPRO.n.nom.sg.	Case=Nom|Gender=Neut|Number=Sing	1	dep	_	wf=`это
+14	случится	случиться	VERB	V.3p.fut.indic.intr.med.sg.pf.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|Transit=Intr|Voice=Mid	1	dep	_	wf=случ`ится
+15	через	через	ADP	PR.	_	1	dep	_	wf=ч`ерез
+16	месяц	месяц	NOUN	S.acc.inan.m.sg.	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|wf=м`есяц
+17	,	,	PUNCT	PUNCT.	_	1	punct	_	_
+18	а	а	CCONJ	CONJ.	_	1	dep	_	_
+19	сейчас	сейчас	ADVPRO	ADVPRO.	_	1	dep	_	wf=сейч`ас
+20	еще	еще	ADV	ADV.	_	1	dep	_	wf=ещё
+21	прошло	пройти	VERB	V.act.indic.n.pf.praet.tran.sg.	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|Transit=Tran|Voice=Act	1	dep	_	wf=прошл`о
+22	только	только	PART	PART.	_	1	dep	_	wf=т`олько
+23	десять	десять	NUM	NUM.nom.	Case=Nom	1	dep	_	wf=д`есять
+24	минут	минута	NOUN	S.f.gen.inan.pl.	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	1	dep	_	SpaceAfter=No|wf=мин`ут
+
