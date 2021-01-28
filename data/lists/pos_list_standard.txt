@@ -1,0 +1,40 @@
+A
+A-PRO
+ADV
+ADV-PRO
+ADVPRO
+ANUM
+APRO
+CONJ
+INIT
+INTJ
+NONLEX
+NUM
+PARENTH
+PART
+PR
+PRAEDIC
+PRAEDIC-PRO
+PRAEDICPRO
+PRO
+S
+S-PRO
+SPRO
+V
+АPRO
+
+Отличия:
+Написание через дефис и без него:
+A-PRO, ADV-PRO, PRAEDIC-PRO, S-PRO
+
+Опечатки:
+PRO: gr="PRO,acc" это
+ADPRO: <w><ana lex="как" gr="ADPRO" как
+АPRO: с русской А
+
+Distort:
+distort)S: gr="(distort)S,f,inan,nom,sg" сссия
+distort: gr="distort" е
+
+???:
+n: <w><ana lex="прочий" gr="n,pl,nom=anom"></ana>пр`очая

@@ -1,0 +1,69 @@
+CD	X	NA
+E	X	NA
+PIN	X	NA
+T	X	NA
+А	PROPN	init
+АЗС	NOUN	abbr
+АР	PROPN	abbr,org
+Апок	NOUN	abbr
+БЗ	NOUN	abbr	
+Браз	ADJ	abbr
+Брит	ADJ	abbr
+В	PROPN/NOUN	init/abbr	# единица измерения
+ВКП	PROPN	abbr,org
+ВНИИТЭ	PROPN	abbr,org
+ВЯ	PROPN	abbr,org
+Вт	NOUN	abbr	# единица измерения (тж. день недели)
+Вып	NOUN	abbr
+ГО	PROPN	abbr
+Гн	NOUN	abbr	# единица измерения
+Гц	NOUN	abbr	# единица измерения
+ДК	NOUN	abbr
+ДР	NOUN	abbr	# день рожденья
+ДТ	PROPN	abbr	# марка трактора + много других значений
+Дж	PROPN	init
+Дон	PROPN	abbr,topon/persn
+ЖК	NOUN	abbr
+З	PROPN	init
+ИВМиМГ	PROPN	abbr,org
+ИСИ	PROPN	abbr,org
+ИТФ	PROPN	abbr,org
+К	PROPN	init
+Кл	PROPN/NOUN	init/abbr	# Клара, Клавдия, класс
+Л	PROPN	abbr,topon/init	# Ленинград
+ЛС	NOUN/PROPN	abbr	# личные сообщения + много других значений
+Ленингр`ад	PROPN	abbr,topon
+М	PROPN	abbr,topon/init	# Москва
+МАПа	PROPN	abbr,org
+МХТ	PROPN	abbr,org
+Мг	NOUN	abbr	# единица измерения
+Мн	PROPN	abbr,topon	# Минск
+Н	PROPN	init
+Нижегородстройтехцентр	PROPN	abbr,org
+Ниппон	PROPN	abbr,org/topon
+ПВХ	NOUN	abbr
+Па	NOUN	abbr	# единица измерения
+Пг	PROPN	abbr,topon	# Петербург
+РАВИ	PROPN	abbr,org
+РАЕН	PROPN	abbr,org
+РАН	PROPN	abbr,org
+РГНФ	PROPN	abbr,org
+РР	PROPN	abbr,org	# Русский репортер
+С-Петербург	PROPN	abbr,topon
+С.-Петербурга	PROPN	abbr,topon
+С.-Петербурге	PROPN	abbr,topon
+СО	PROPN	abbr,org	# Сибирское отделение
+СПБ	PROPN	abbr,topon	# Санкт-Петербург
+СПС	PROPN	abbr,org
+СПб	PROPN	abbr,topon	# Санкт-Петербург
+СТБ	PROPN	abbr,org
+Сне	NOUN	_
+Сосново[й]	PROPN	topon
+Спб	PROPN	abbr,topon	# Санкт-Петербург
+Тл	NOUN	abbr	# единица измерения
+Тр	NOUN	abbr	# Труды
+УРСС	PROPN	abbr,org
+Ф	PROPN	abbr
+ФЗ	NOUN	abbr	# федеральный закон
+ФЗУ	NOUN	abbr
+Электрик	PROPN/NOUN	_

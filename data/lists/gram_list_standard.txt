@@ -1,0 +1,70 @@
+0
+1p
+2p
+3p
+PRAEDIC
+abbr
+acc
+acc2
+act
+adnum
+anim
+anom
+brev
+ciph
+comp
+comp2
+dat
+dat2
+distort
+f
+famn
+fut
+gen
+gen2
+genm
+ger
+imper
+imper2
+inan
+indic
+inf
+ins
+intr
+ipf
+loc
+loc2
+m
+m-f
+med
+n
+nom
+norm
+obsc
+partcp
+pass
+patrn
+persn
+pf
+pl
+plen
+praes
+praet
+sg
+topon
+tran
+voc
+zoon
+
+Отличия:
+
+'obsc' - ненормативная лексика
+'num' - какой-то тип числительных: gr="NUM=num" сто
+'PRAEDIC' - двойной разбор: gr="A,PRAEDIC,brev,pl" шедевральны
+'m-f' = mf - общий род
+'ac0t' - опечатка (act): gr="V,pf,tran=m,sg,ac0t,praet,indic" спрос`ил
+'genm' - опечатка (gen): gr="S,distort,inan,genm,nom,pl" спецэффектков
+'int' - опечатка (intr): gr="V,pf,int=f,sg,act,praet,indic" прич`алила
+'inёan', - опечатка (inan): gr="S,pl,inёan,0=gen" США
+'nm' - опечатка (nom): gr="S,famn,m,anom=sg,nm" Сол`омин
+'norm' - опечатка (nom): gr="PART, norm" что и gr="APRO, n, norm" это
