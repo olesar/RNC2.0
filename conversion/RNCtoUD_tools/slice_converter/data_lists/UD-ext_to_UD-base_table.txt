@@ -1,0 +1,11 @@
+ANUM	ADJ
+PRED	VERB
+PREDPRO	VERB
+PARENTH	ADV
+ADVPRO	ADV
+Case=Acc2	Case=Nom
+Case=Loc2	Case=Loc
+Degree=Cmp2	Degree=Cmp
+Transit=Intr	
+Transit=Tran	
+Mood=Imp2	Mood=Imp

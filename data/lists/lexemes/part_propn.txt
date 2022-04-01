@@ -1,0 +1,9 @@
+да	PART
+де	PART
+делла	PART
+дель	PART
+дос	PART
+дю	PART
+ибн	PART
+фон	PART
+фра	PART
