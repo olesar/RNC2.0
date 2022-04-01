@@ -1,0 +1,266 @@
+# newpar
+# sent_id = 1
+# text = Подробности смертельного ДТП в Марий Эл: при ударе из «Опеля» вылетел двигатель, в который врезалась SCANIA.
+1	Подробности	подробность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	_
+2	смертельного	смертельный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	_
+3	ДТП	ДТП	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Indecl=Yes|Number=Sing	1	nmod	_	_
+4	в	в	ADP	_	_	6	case	_	_
+5	Марий	марий	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	Эл	Эл	PROPN	_	Abbr=Yes|NameType=Geo	3	nmod	_	SpaceAfter=No
+7	:	:	PUNCT	_	_	14	punct	_	_
+8	при	при	ADP	_	_	9	case	_	_
+9	ударе	удар	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	14	obl	_	_
+10	из	из	ADP	_	_	12	case	_	_
+11	«	«	PUNCT	_	_	12	punct	_	SpaceAfter=No
+12	Опеля	Опель	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|NameType=Com|Number=Sing	14	obl	_	SpaceAfter=No
+13	»	»	PUNCT	_	_	12	punct	_	_
+14	вылетел	вылететь	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+15	двигатель	двигатель	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	14	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	_	_
+17	в	в	ADP	_	_	18	case	_	_
+18	который	который	PRON	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	19	obl	_	_
+19	врезалась	врезаться	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Mid	15	acl:relcl	_	_
+20	SCANIA	SCANIA	X	_	Foreign=Yes	19	nsubj	_	SpaceAfter=No
+21	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\r\n
+
+# sent_id = 2
+# text = ВИДЕО
+1	ВИДЕО	видео	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpacesAfter=\r\n\r\n
+
+# newpar
+# sent_id = 3
+# text = Стали известны подробности смертельного ДТП, происшедшего днем, 8 января, в Звениговском районе Марий Эл и унесшего жизнь мужчины.
+1	Стали	стать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+2	известны	известный	ADJ	_	Degree=Pos|Number=Plur|Variant=Short	1	xcomp	_	_
+3	подробности	подробность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	1	nsubj	_	_
+4	смертельного	смертельный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	_
+5	ДТП	ДТП	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Indecl=Yes|Number=Sing	3	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	происшедшего	произойти	VERB	_	Aspect=Perf|Case=Gen|Gender=Masc|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Part|Voice=Act	5	acl	_	_
+8	днем	день	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	8	8	ANUM	_	NumForm=Digit|NumType=Ord	7	obl	_	_
+11	января	январь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	10	punct	_	_
+13	в	в	ADP	_	_	15	case	_	_
+14	Звениговском	звениговский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	районе	район	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	7	obl	_	SpacesAfter=\s
+16	Марий	марий	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
+17	Эл	Эл	PROPN	_	Abbr=Yes|NameType=Geo	15	nmod	_	_
+18	и	и	CCONJ	_	_	19	cc	_	_
+19	унесшего	уйти	VERB	_	Aspect=Perf|Case=Gen|Gender=Masc|Number=Sing|Tense=Past|Transit=Tran|VerbForm=Part|Voice=Act	7	conj	_	_
+20	жизнь	жизнь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	19	obj	_	_
+21	мужчины	мужчина	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\r\n
+
+# sent_id = 4
+# text = При столкновении иномарок из «Опеля» вылетел двигатель, в который врезалась SCANIA.
+1	При	при	ADP	_	_	2	case	_	_
+2	столкновении	столкновение	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	8	obl	_	_
+3	иномарок	иномарка	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	_
+4	из	из	ADP	_	_	6	case	_	_
+5	«	«	PUNCT	_	_	6	punct	_	SpaceAfter=No
+6	Опеля	Опель	PROPN	_	Animacy=Inan|Case=Gen|Gender=Masc|NameType=Pro|Number=Sing	8	obl	_	SpaceAfter=No
+7	»	»	PUNCT	_	_	6	punct	_	_
+8	вылетел	вылететь	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+9	двигатель	двигатель	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	в	в	ADP	_	_	12	case	_	_
+12	который	который	PRON	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	13	obl	_	_
+13	врезалась	врезаться	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Mid	9	acl:relcl	_	_
+14	SCANIA.	SCANIA.	X	_	Foreign=Yes	13	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\r\n\r\n
+
+# newpar
+# sent_id = 5
+# text = Предварительные данные сообщила группа по пропаганде безопасности дорожного движения УГИБДД МВД по Марий Эл:
+1	Предварительные	предварительный	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	2	amod	_	_
+2	данные	данные	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Plur	3	obj	_	_
+3	сообщила	сообщить	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|Transit=Tran|VerbForm=Fin|Voice=Act	0	root	_	_
+4	группа	группа	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+5	по	по	ADP	_	_	6	case	_	_
+6	пропаганде	пропаганда	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	4	nmod	_	_
+7	безопасности	безопасность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
+8	дорожного	дорожный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	_
+9	движения	движение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
+10	УГИБДД	УГИБДД	PROPN	_	Abbr=Yes|NameType=Com	4	nmod	_	_
+11	МВД	МВД	PROPN	_	Abbr=Yes|NameType=Com	10	nmod	_	_
+12	по	по	ADP	_	_	14	case	_	_
+13	Марий	марий	ADJ	_	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	Эл	Эл	PROPN	_	Animacy=Inan|Case=Dat|Gender=Fem|NameType=Geo|Number=Sing	11	nmod	_	SpaceAfter=No
+15	:	:	PUNCT	_	_	3	punct	_	SpacesAfter=\r\n\r\n
+
+# newpar
+# sent_id = 6
+# text = - Днем в Звениговском районе Марий Эл на 23-м километре м автодороги Вятка 41-летняя женщина за рулем автомобиля OPEL, несмотря на знак «Обгон запрещен», выехала на встречку, где врезалась в двигавшийся по ней NISSAN.
+1	-	-	PUNCT	_	_	29	punct	_	_
+2	Днем	день	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	29	obl:tmod	_	_
+3	в	в	ADP	_	_	5	case	_	_
+4	Звениговском	звениговский	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	районе	район	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	29	obl	_	_
+6	Марий	марий	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	Эл	Эл	PROPN	_	Abbr=Yes|NameType=Geo	5	nmod	_	_
+8	на	на	ADP	_	_	10	case	_	_
+9	23-м	23-й	ANUM	_	Case=Loc|Gender=Masc|Number=Sing|NumForm=Combi|NumType=Ord	10	amod	_	_
+10	километре	километр	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	29	obl	_	_
+11	м	метр	NOUN	_	Abbr=Yes	10	nmod	_	_
+12	автодороги	автодорога	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
+13	Вятка	Вятка	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|NameType=Geo|Number=Sing	12	appos	_	_
+14	41-летняя	41-летний	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	женщина	женщина	NOUN	_	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	29	nsubj	_	_
+16	за	за	ADP	_	_	17	case	_	_
+17	рулем	руль	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	15	nmod	_	_
+18	автомобиля	автомобиль	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	17	nmod	_	_
+19	OPEL	OPEL	X	_	Foreign=Yes	18	appos	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	_	_
+21	несмотря	несмотря	ADV	_	Polarity=Neg	23	case	_	_
+22	на	на	ADP	_	_	21	fixed	_	_
+23	знак	знак	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	29	obl	_	_
+24	«	«	PUNCT	_	_	26	punct	_	SpaceAfter=No
+25	Обгон	обгон	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	23	appos	_	_
+26	запрещен	запретить	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	23	appos	_	SpaceAfter=No
+27	»	»	PUNCT	_	_	26	punct	_	SpaceAfter=No
+28	,	,	PUNCT	_	_	23	punct	_	_
+29	выехала	выехать	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+30	на	на	ADP	_	_	31	case	_	_
+31	встречку	встречка	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	29	obl	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	34	punct	_	_
+33	где	где	ADVPRO	_	PronType=Rel	34	advmod	_	_
+34	врезалась	врезаться	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Mid	31	acl:relcl	_	SpacesAfter=\s
+35	в	в	ADP	_	_	39	case	_	_
+36	двигавшийся	двигаться	VERB	_	Animacy=Inan|Aspect=Perf|Case=Acc|Gender=Masc|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Part|Voice=Mid	39	acl	_	_
+37	по	по	ADP	_	_	38	case	_	_
+38	ней	она	PRON	_	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	36	obl	_	_
+39	NISSAN	NISSAN	X	_	Foreign=Yes	34	obl	_	SpaceAfter=No
+40	.	.	PUNCT	_	_	29	punct	_	SpacesAfter=\r\n
+
+# sent_id = 7
+# text = От удара из автомобиля OPEL на дорогу вылетел двигатель, на который наехал грузовик SCANIA.
+1	От	от	ADP	_	_	2	case	_	_
+2	удара	удар	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	obl	_	_
+3	из	из	ADP	_	_	4	case	_	_
+4	автомобиля	автомобиль	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	obl	_	_
+5	OPEL	OPEL	X	_	Foreign=Yes	4	appos	_	_
+6	на	на	ADP	_	_	7	case	_	_
+7	дорогу	дорога	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	8	obl	_	_
+8	вылетел	вылететь	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+9	двигатель	двигатель	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	на	на	ADP	_	_	12	case	_	_
+12	который	который	PRON	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	13	obl	_	_
+13	наехал	наехать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+14	грузовик	грузовик	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	_
+15	SCANIA.	SCANIA.	X	_	Foreign=Yes	14	appos	_	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\r\n
+
+# sent_id = 8
+# text = 53-летний водитель NISSAN погиб на месте происшествия, не дождавшись приезда бригады скорой помощи.
+1	53-летний	53-летний	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	водитель	водитель	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+3	NISSAN	NISSAN	X	_	Foreign=Yes	2	nmod	_	_
+4	погиб	погибнуть	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+5	на	на	ADP	_	_	6	case	_	_
+6	месте	место	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	4	obl	_	_
+7	происшествия	происшествие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	_	_
+9	не	не	PART	_	Polarity=Neg	10	advmod	_	_
+10	дождавшись	дожидаться	VERB	_	Aspect=Perf|Tense=Past|Transit=Intr|VerbForm=Conv|Voice=Mid	4	advcl	_	_
+11	приезда	приезд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	obj	_	_
+12	бригады	бригада	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
+13	скорой	скорый	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	помощи	помощь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\r\n
+
+# sent_id = 9
+# text = Женщина, находившаяся за рулем автомобиля OPEL, доставлена в больницу и в настоящее время помещена в реанимацию, - рассказали в группе по пропаганде безопасности дорожного движения УГИБДД МВД по Марий Эл.
+1	Женщина	женщина	NOUN	_	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	9	nsubj:pass	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	находившаяся	находиться	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Part|Voice=Act	1	acl	_	_
+4	за	за	ADP	_	_	5	case	_	_
+5	рулем	руль	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	3	obl	_	_
+6	автомобиля	автомобиль	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+7	OPEL	OPEL	X	_	Foreign=Yes	6	appos	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	_	_
+9	доставлена	доставить	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+10	в	в	ADP	_	_	11	case	_	_
+11	больницу	больница	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
+12	и	и	CCONJ	_	_	16	cc	_	_
+13	в	в	ADP	_	_	16	advmod	_	_
+14	настоящее	настоящий	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	13	fixed	_	_
+15	время	время	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	13	fixed	_	_
+16	помещена	поместить	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	9	conj	_	_
+17	в	в	ADP	_	_	18	case	_	_
+18	реанимацию	реанимация	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	16	obl	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	_	_
+20	-	-	PUNCT	_	_	21	punct	_	_
+21	рассказали	рассказать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|Transit=Intr,Tran|VerbForm=Fin|Voice=Act	9	parataxis	_	_
+22	в	в	ADP	_	_	23	case	_	_
+23	группе	группа	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	21	obl	_	_
+24	по	по	ADP	_	_	25	case	_	_
+25	пропаганде	пропаганда	NOUN	_	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	23	nmod	_	_
+26	безопасности	безопасность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	25	nmod	_	_
+27	дорожного	дорожный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	28	amod	_	_
+28	движения	движение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	26	nmod	_	_
+29	УГИБДД	УГИБДД	PROPN	_	Abbr=Yes|NameType=Com	23	nmod	_	_
+30	МВД	МВД	PROPN	_	Abbr=Yes|NameType=Com	29	nmod	_	_
+31	по	по	ADP	_	_	33	case	_	_
+32	Марий	марий	ADJ	_	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing	33	amod	_	_
+33	Эл	Эл	PROPN	_	Abbr=Yes|NameType=Geo	30	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\r\n
+
+# sent_id = 10
+# text = В этот же день вечером в 9-м микрорайоне Йошкар-Олы на дороге был сбит 38-летний мужчина.
+1	В	в	ADP	_	_	4	case	_	_
+2	этот	этот	DET	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+3	же	же	PART	_	_	2	advmod	_	_
+4	день	день	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	14	obl	_	_
+5	вечером	вечер	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	14	obl:tmod	_	_
+6	в	в	ADP	_	_	8	case	_	_
+7	9-м	9-й	ANUM	_	Case=Loc|Gender=Masc|Number=Sing|NumForm=Combi|NumType=Ord	8	amod	_	_
+8	микрорайоне	микрорайон	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	14	obl	_	_
+9	Йошкар-	Йошкар-	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No
+10	Олы	Ола	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|NameType=Geo|Number=Sing	8	nmod	_	_
+11	на	на	ADP	_	_	12	case	_	_
+12	дороге	дорога	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	14	obl	_	_
+13	был	быть	AUX	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	14	aux:pass	_	_
+14	сбит	сбить	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+15	38-летний	38-летний	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	_
+16	мужчина	мужчина	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	14	nsubj:pass	_	SpaceAfter=No
+17	.	.	PUNCT	_	_	14	punct	_	SpacesAfter=\r\n
+
+# sent_id = 11
+# text = Всего 8 января в Марий Эл произошло два ДТП с пострадавшими, а также 34 столкновения автотранспорта.
+1	Всего	всего	ADVPRO	_	PronType=Tot	2	advmod	_	_
+2	8	8	ANUM	_	NumForm=Digit|NumType=Ord	7	obl	_	_
+3	января	январь	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	flat	_	_
+4	в	в	ADP	_	_	6	case	_	_
+5	Марий	марий	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	_
+6	Эл	Эл	PROPN	_	Animacy=Inan|Case=Loc|Gender=Masc|NameType=Geo|Number=Sing	7	obl	_	_
+7	произошло	произойти	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|Transit=Intr|VerbForm=Fin|Voice=Act	0	root	_	_
+8	два	два	NUM	_	Case=Nom|Gender=Neut|NumForm=Word|NumType=Card	9	nummod:gov	_	_
+9	ДТП	ДТП	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Indecl=Yes|Number=Sing	7	nsubj	_	_
+10	с	с	ADP	_	_	11	case	_	_
+11	пострадавшими	пострадавший	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	_	_
+13	а	а	CCONJ	_	_	16	cc	_	_
+14	также	также	ADV	_	Degree=Pos	13	fixed	_	_
+15	34	34	NUM	_	NumForm=Digit|NumType=Card	16	nummod:gov	_	_
+16	столкновения	столкновение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	9	conj	_	_
+17	автотранспорта	автотранспорт	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\r\n
+
+# sent_id = 12
+# text = Полицейскими пресечено 246 нарушений ПДД, остановлены 10 пьяных за рулем.
+1	Полицейскими	полицейский	NOUN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	2	obl:agent	_	_
+2	пресечено	пресечить	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+3	246	246	NUM	_	NumForm=Digit|NumType=Card	4	nummod:gov	_	_
+4	нарушений	нарушение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	2	nsubj:pass	_	_
+5	ПДД	ПДД	NOUN	_	Abbr=Yes	4	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	остановлены	остановить	VERB	_	Aspect=Perf|Number=Plur|Tense=Past|Transit=Tran|Variant=Short|VerbForm=Part|Voice=Pass	2	conj	_	_
+8	10	10	NUM	_	NumForm=Digit|NumType=Card	9	nummod:gov	_	_
+9	пьяных	пьяный	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	7	nsubj:pass	_	_
+10	за	за	ADP	_	_	11	case	_	_
+11	рулем	руль	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	_	_
+
