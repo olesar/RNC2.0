@@ -2,7 +2,7 @@
 
 ### 1. Представление XML
 
-Разберем начало файла текста Л. Серовой "А он, мятежный, просит бури..." [Наука и жизнь, № 2, 2003] (2003/A_on_myatezhnyi.tgt). 
+Разберем предложение из статьи Л. Серовой "А он, мятежный, просит бури..." [Наука и жизнь, № 2, 2003] (2003/A_on_myatezhnyi.tgt). 
 Здесь позиция токена указана в атрибуте `ID`, синтаксический хозяин - в атрибуте `DOM`, синтаксическая роль - в атрибуте `LINK`.
 
 ```
@@ -92,3 +92,9 @@ ID хозяина (DOM) в столбец 7, синтаксическую рол
 
 Примечание. При переводе в UD-CONLLU могут понадобиться и другие операции, такие как преобразование неоднословных выражений в отдельные токены или включение информации о лексических функциях. 
 
+### Полезные материалы
+
+* [SynTagRus_convertor](https://github.com/Kira-D/SynTagRus_convertor) Киры Дрогановой.
+* Droganova, Kira & Daniel Zeman. Conversion of SynTagRus (the Russian dependency treebank) to Universal Dependencies. ÚFAL Technical Report TR-2016-60 [PDF](https://ufal.mff.cuni.cz/techrep/tr60.pdf)
+* Павлюк, Анастасия Станиславовна. Преобразование синтаксически аннотированного корпуса текстов SynTagTus в формат Universal Dependencies с сохранением
+специфики русского языка. Магистерская диссертация (ВКР), РГГУ, 2020. [PDF](https://github.com/olesar/RNC2.0/blob/main/docs/Pavljuk_SynTagRus_convertor.pdf)
