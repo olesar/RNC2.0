@@ -2,6 +2,7 @@ import re
 import argparse
 import sys
 import os
+from tqdm import tqdm
 
 
 def do_single(file_path, out_file_path):
@@ -32,19 +33,23 @@ def do_single(file_path, out_file_path):
 
 def do_multiple(root, result_folder_path):
     walk = [(x, y, z) for x, y, z in os.walk(root)]
+    dir_len = 0
+    for root, dirs, files in walk:
+        for file in files:
+            dir_len += 1
+    pbar = tqdm(total=dir_len)
     for root, dirs, files in walk:
         for file in range(len(files)):
             new_file_path = os.path.join(result_folder_path + root.replace(root, ""), files[file])
-            # print(new_file_path)
             f_path = os.path.join(root, files[file])
-            # print(f_path)
             do_single(f_path, new_file_path)
+            pbar.update()
 
 
 def main():
     parser = argparse.ArgumentParser(description='fixing numeration')
     parser.add_argument('single_or_folder', type=str, help='if file is single or folder')
-    parser.add_argument('source_path', type=str, help='source_path path')
+    parser.add_argument('source_path', type=str, help='source_path')
     parser.add_argument('result_path', type=str, help='result_path')
     args = parser.parse_args()
 
