@@ -44,6 +44,7 @@ def do_multiple(root, result_folder_path):
             f_path = os.path.join(root, files[file])
             do_single(f_path, new_file_path)
             pbar.update()
+    pbar.close()
 
 
 def main():
