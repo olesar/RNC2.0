@@ -34,7 +34,7 @@ def do_single(file_path, out_file_path):
 
 
 def do_multiple(root_folder, result_folder_path):
-    walk = [(x, y, z) for x, y, z in os.walk(root)]
+    walk = [(x, y, z) for x, y, z in os.walk(root_folder)]
     dir_len = 0
     for root, dirs, files in walk:
         for file in files:
