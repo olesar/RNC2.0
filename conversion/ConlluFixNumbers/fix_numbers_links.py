@@ -7,6 +7,8 @@ from tqdm import tqdm
 
 def do_single(file_path, out_file_path):
     os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
+    if (os.path.splitext(file_path)[-1] != '.conllu'):
+        return
     with open(file_path, 'r', encoding="utf-8") as infile, open(out_file_path, 'w',
                                                                 encoding='utf-8') as outfile:
         file_text_list = infile.read().strip('\n').split('\n\n')
@@ -53,8 +55,8 @@ def do_single(file_path, out_file_path):
             outfile.write('\n')
 
 
-def do_multiple(root, result_folder_path):
-    walk = [(x, y, z) for x, y, z in os.walk(root)]
+def do_multiple(root_folder, result_folder_path):
+    walk = [(x, y, z) for x, y, z in os.walk(root_folder)]
     dir_len = 0
     for root, dirs, files in walk:
         for file in files:
@@ -62,7 +64,7 @@ def do_multiple(root, result_folder_path):
     pbar = tqdm(total=dir_len)
     for root, dirs, files in walk:
         for file in range(len(files)):
-            new_file_path = os.path.join(result_folder_path + root.replace(root, ""), files[file])
+            new_file_path = os.path.join(result_folder_path + root.replace(root_folder, ""), files[file])
             f_path = os.path.join(root, files[file])
             do_single(f_path, new_file_path)
             pbar.update()
