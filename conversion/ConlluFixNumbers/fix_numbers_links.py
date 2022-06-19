@@ -5,12 +5,28 @@ import os
 from tqdm import tqdm
 
 
+def crlf_to_lf(finish_file_path):
+    # replacement strings
+    windows_line_ending = b'\r\n'
+    unix_line_ending = b'\n'
+    with open(finish_file_path, 'rb') as open_file:
+        content = open_file.read()
+
+    # Windows ➡ Unix
+    content = content.replace(windows_line_ending, unix_line_ending)
+    # Unix ➡ Windows
+    # content = content.replace(UNIX_LINE_ENDING, WINDOWS_LINE_ENDING)
+
+    with open(finish_file_path, 'wb') as open_file:
+        open_file.write(content)
+
+
 def do_single(file_path, out_file_path):
     os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
     if (os.path.splitext(file_path)[-1] != '.conllu'):
         return
     with open(file_path, 'r', encoding="utf-8") as infile, open(out_file_path, 'w',
-                                                                encoding='utf-8') as outfile:
+                                                                encoding='utf-8', newline='\n') as outfile:
         file_text_list = infile.read().strip('\n').split('\n\n')
         for paragraph in file_text_list:
             header = []
@@ -53,6 +69,7 @@ def do_single(file_path, out_file_path):
                 outfile.write(str(counter) + '\t' + "\t".join(fixed_body_line) + '\n')
                 counter += 1
             outfile.write('\n')
+    crlf_to_lf(out_file_path)
 
 
 def do_multiple(root_folder, result_folder_path):

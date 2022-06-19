@@ -6,11 +6,11 @@ from tqdm import tqdm
 
 
 def do_single(file_path, out_file_path):
-    os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
     if (os.path.splitext(file_path)[-1] != '.conllu'):
         return
+    os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
     with open(file_path, 'r', encoding="utf-8") as infile, open(out_file_path, 'w',
-                                                             encoding='utf-8') as outfile:
+                                                             encoding='utf-8', newline='\n') as outfile:
         file_text_list = infile.read().strip('\n').split('\n\n')
         for paragraph in file_text_list:
             header = []
