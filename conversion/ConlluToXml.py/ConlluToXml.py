@@ -237,22 +237,14 @@ def remove_empty_lex(xml):  # Убираем пустой lex
     return new_xml
 
 
-def create_xml(path, folder=False):
-    file_path = path
-    if os.path.splitext(path)[-1] != '.conllu':
+def do_single(file_path, out_file_path):
+    os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
+    if os.path.splitext(file_path)[-1] != '.conllu':
         return
-    head = os.path.split(path)[0]
-    tail = os.path.split(path)[1]
     with open(file_path, 'r', encoding='utf-8') as f:
         text = f.read()
         paragraphs = get_paragraphs(text)  # Разбить на параграфы
-        if folder:
-            f_path = os.path.join(head, 'xml', tail.split(".")[0])
-            os.makedirs(os.path.dirname(f_path), exist_ok=True)
-        else:
-            f_path = os.path.join(head, tail.split(".")[0])
-        print(f_path)
-        with open(f'{f_path}.xml', 'w',
+        with open(out_file_path, 'w',
                   encoding='utf-8', newline='\n') as outf:
             print('<?xml version="1.0" encoding="UTF-8"?>\n<html><body>', file=outf)
             for i in range(len(paragraphs)):  # Идем по параграфам
@@ -274,15 +266,18 @@ def create_xml(path, folder=False):
             print('</se></p>\n</body></html>', file=outf)
 
 
-def do_multiple(rootfolder):
-    walk = [(x, y, z) for x, y, z in os.walk(rootfolder)]
+def do_multiple(root_folder):
+    walk = [(x, y, z) for x, y, z in os.walk(root_folder)]
     dir_len = 0
     for root, dirs, files in walk:
         dir_len = len(files)
     pbar = tqdm(total=dir_len)
     for root, dirs, files in walk:
         for file in range(len(files)):
-            create_xml(os.path.join(root, files[file]), folder=True)
+            new_file_path = os.path.join('xml' + root.replace(root_folder, ""), files[file].split('.')[0] + '.xml')
+            print(new_file_path)
+            f_path = os.path.join(root, files[file])
+            do_single(f_path, new_file_path)
             pbar.update()
     if dir_len == 0:
         print('empty folder')
@@ -295,7 +290,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if re.search(r'.conllu', args.path):  # Если аргумент заканчивается на .connlu - значит это файл
         print(f"file - {args.path}")
-        create_xml(args.path)
-        print(f"created xml file for - {args.path}")
+        do_single(args.path, args.path.split('.')[0] + '.xml')
     else:
         do_multiple(args.path)
