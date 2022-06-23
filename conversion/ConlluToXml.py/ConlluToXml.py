@@ -247,12 +247,11 @@ def create_xml(path, folder=False):
         text = f.read()
         paragraphs = get_paragraphs(text)  # Разбить на параграфы
         if folder:
-            folder_name = 'xml'
+            f_path = os.path.join(head, 'xml', tail.split(".")[0])
+            os.makedirs(os.path.dirname(f_path), exist_ok=True)
         else:
-            folder_name = ''
-        f_path = os.path.join(head, folder_name, tail.split(".")[0])
+            f_path = os.path.join(head, tail.split(".")[0])
         print(f_path)
-        os.makedirs(os.path.dirname(f_path), exist_ok=True)
         with open(f'{f_path}.xml', 'w',
                   encoding='utf-8', newline='\n') as outf:
             print('<?xml version="1.0" encoding="UTF-8"?>\n<html><body>', file=outf)
