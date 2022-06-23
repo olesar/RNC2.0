@@ -1,5 +1,4 @@
 import argparse
-import glob
 import os
 import re
 
@@ -38,9 +37,9 @@ def convert_grammar(text):  # Замена
         #
         "Anom=Yes": "anom",
         #
-#        "Aspect=Imp": "ipf",
+        # "Aspect=Imp": "ipf",
         "Aspect=Imp": "",
-#        "Aspect=Perf": "pf",
+        #  "Aspect=Perf": "pf",
         "Aspect=Perf": "",
         #
         "Case=Nom": "nom",
@@ -139,7 +138,9 @@ def convert_grammar(text):  # Замена
         "Voice=Pass": "pass",
         "Voice=Mid": "med",
         "Voice=Necess": "debit"
-## other features not included in the list: coll (aggregate noun), pl_tant (pl. tantum), redundand (лишнее), crossed_out (зачеркнуто), without_copula, in_phrase (в соч.), reverse_voices (compared to the Greek source test)
+        # other features not included in the list: coll (aggregate noun), pl_tant (pl. tantum), redundand (лишнее),
+        # crossed_out (зачеркнуто), without_copula, in_phrase (в соч.), reverse_voices (compared to the Greek source
+        # test)
     }
     new_gram = []
     for gram in grammar:
@@ -237,34 +238,56 @@ def remove_empty_lex(xml):  # Убираем пустой lex
 
 
 def create_xml(path, folder=False):
-    folder_name = "/"
+    file_path = path
+    if os.path.splitext(path)[-1] != '.conllu':
+        return
     head = os.path.split(path)[0]
     tail = os.path.split(path)[1]
-    with open(path, 'r', encoding='utf-8') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         text = f.read()
-        paragraphs = get_paragraphs(text) # Разбить на параграфы
+        paragraphs = get_paragraphs(text)  # Разбить на параграфы
         if folder:
-            folder_name = '/xml/'
-        with open(f'{head}{folder_name}{tail.split(".")[0]}.xml', 'w',
+            folder_name = 'xml'
+        else:
+            folder_name = ''
+        f_path = os.path.join(head, folder_name, tail.split(".")[0])
+        print(f_path)
+        os.makedirs(os.path.dirname(f_path), exist_ok=True)
+        with open(f'{f_path}.xml', 'w',
                   encoding='utf-8', newline='\n') as outf:
             print('<?xml version="1.0" encoding="UTF-8"?>\n<html><body>', file=outf)
-            for i in range(len(paragraphs)): # Идем по параграфам
+            for i in range(len(paragraphs)):  # Идем по параграфам
                 xml = []  # Тело
                 tags = []  # Шапка
                 for sent in paragraphs[i].split("\n"):
-                    if sent.split("\t")[0].isdigit(): # Если текст в формате conllu
-                        xml.append(text_into_xml(sent)) # Переводит текст в xml формат
+                    if sent.split("\t")[0].isdigit():  # Если текст в формате conllu
+                        xml.append(text_into_xml(sent))  # Переводит текст в xml формат
                     else:
                         tags.append(sent.strip("\n"))
                 if len(tags) > 0:
                     if i != 0:  # Если не первый параграф
-                        print(create_tags(tags, False), file=outf) # Создает теги <p>, <se> и т.д.
+                        print(create_tags(tags, False), file=outf)  # Создает теги <p>, <se> и т.д.
                     else:
                         print(create_tags(tags, True), file=outf)
-                xml = edit_punct_xml(xml) # Убрать теги из пунктуации, перенести на одну строку с разборами
-                xml = remove_empty_lex(xml) # Убирает атрибут lex из разбора, если пустая лемма
+                xml = edit_punct_xml(xml)  # Убрать теги из пунктуации, перенести на одну строку с разборами
+                xml = remove_empty_lex(xml)  # Убирает атрибут lex из разбора, если пустая лемма
                 print(f"\n".join(xml), file=outf)
             print('</se></p>\n</body></html>', file=outf)
+
+
+def do_multiple(rootfolder):
+    walk = [(x, y, z) for x, y, z in os.walk(rootfolder)]
+    dir_len = 0
+    for root, dirs, files in walk:
+        dir_len = len(files)
+    pbar = tqdm(total=dir_len)
+    for root, dirs, files in walk:
+        for file in range(len(files)):
+            create_xml(os.path.join(root, files[file]), folder=True)
+            pbar.update()
+    if dir_len == 0:
+        print('empty folder')
+    pbar.close()
 
 
 if __name__ == '__main__':
@@ -276,17 +299,4 @@ if __name__ == '__main__':
         create_xml(args.path)
         print(f"created xml file for - {args.path}")
     else:
-        files = list(glob.glob(f"{args.path}/*.conllu"))
-        if len(files) > 0:
-            print(f"folder - {args.path}")  # Если нет, то папка
-            if not os.path.exists(f"{args.path}/xml"):  # Если папки xml не существует создать ее
-                os.makedirs(f"{args.path}/xml")
-            pbar = tqdm(range(len(files)), desc="starting")
-            for confile in pbar:  # для каждого файла с расширением .conllu в папке
-                pbar.set_description(os.path.split(files[confile])[1])
-                create_xml(files[confile], folder=True)
-                tqdm.write(f"created xml file for - {os.path.split(files[confile])[1]}")
-                if confile == (len(files) - 1):
-                    pbar.set_description("finished")
-        else:
-            print("Empty folder")
+        do_multiple(args.path)
